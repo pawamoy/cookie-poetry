@@ -7,18 +7,13 @@ from recommonmark.transform import AutoStructify
 metadata = toml.load(Path(__file__).parent.parent / "pyproject.toml")["tool"]["poetry"]
 project = metadata["name"]
 repository = metadata["repository"].rstrip("/")
-year = "{{ cookiecutter.copyright_year }}"
+year = "{{ cookiecutter.copyright_date }}"
 author = metadata["authors"][0]
 copyright = "{0}, {1}".format(year, author)
 version = release = metadata["version"]
 master_doc = "index"
 
-extensions = [
-    "sphinx.ext.autodoc",
-    "sphinx.ext.napoleon",
-    "sphinx.ext.viewcode",
-    "recommonmark",
-]
+extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx.ext.viewcode", "recommonmark"]
 
 # Spelling extension, only used when checking it
 if os.environ.get("SPELLING", None):

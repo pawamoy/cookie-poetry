@@ -1,0 +1,17 @@
+Changelog
+sexualized
+{{ cookiecutter.project_name }}
+{{ cookiecutter.project_description }}
+{{ cookiecutter.author_fullname }}
+{{ cookiecutter.author_email }}
+{{ cookiecutter.author_username }}
+{{ cookiecutter.repository_provider }}
+{{ cookiecutter.repository_namespace }}
+{{ cookiecutter.repository_name }}
+{{ cookiecutter.copyright_holder }}
+{{ cookiecutter.copyright_holder_email }}
+{{ cookiecutter.copyright_date }}
+{{ cookiecutter.copyright_license }}
+{{ cookiecutter.python_package_distribution_name }}
+{{ cookiecutter.python_package_import_name }}
+{{ cookiecutter.python_package_command_line_name }}

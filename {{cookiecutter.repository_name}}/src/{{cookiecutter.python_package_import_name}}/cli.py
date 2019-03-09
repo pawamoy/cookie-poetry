@@ -15,7 +15,16 @@ but that will cause problems: the code will get executed twice:
 Also see http://click.pocoo.org/5/setuptools/#setuptools-integration.
 """
 
+import argparse
+
 
 def main(args=None):
     """The main function, which is executed when you type ``{{ cookiecutter.python_package_import_name }}`` or ``python -m {{ cookiecutter.python_package_import_name }}``."""
+    parser = get_parser()
+    args = parser.parse_args(args=args)
+
     return 0
+
+
+def get_parser():
+    return argparse.ArgumentParser(prog="{{ cookiecutter.python_package_command_line_name }}")

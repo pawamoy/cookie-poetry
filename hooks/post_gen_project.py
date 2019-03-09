@@ -39,4 +39,10 @@ def copy_license():
     shutil.rmtree('licenses')
 
 
+def symlink_docs():
+    os.symlink('../README.md', 'docs/readme.md')
+    os.symlink('../CREDITS.md', 'docs/credits.md')
+
+
 copy_license()
+symlink_docs()

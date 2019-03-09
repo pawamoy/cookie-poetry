@@ -1,4 +1,4 @@
-# Welcome to {{ project_name }}'s documentation!
+# Welcome to {{ cookiecutter.project_name }}'s documentation!
 
 - [Overview](readme.md)
 - [Contributing](contributing.md)

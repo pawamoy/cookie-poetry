@@ -53,11 +53,11 @@ pipx install --python python3.6 {{ cookiecutter.python_package_distribution_name
 TODO
 
 ## Usage (command-line)
-```
+{% raw %}```
 {{ command_line_help }}
 ```
 
-Commands:
+{% if commands %}Commands:
 {% for command in commands %}
 - [`{{ command.name }}`](#{{ command.name }}){% endfor %}
 
@@ -68,4 +68,4 @@ Commands:
 ```
 
 {% include "command_" + command.name.replace("-", "_") + "_extra.md" ignore missing %}
-{% endfor %}
+{% endfor %}{% endif %}{% endraw %}

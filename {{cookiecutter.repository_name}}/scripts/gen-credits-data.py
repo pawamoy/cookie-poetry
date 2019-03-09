@@ -2,7 +2,6 @@
 
 import json
 from itertools import chain
-
 from pathlib import Path
 
 import requests
@@ -39,10 +38,7 @@ package_info = {p["name"]: clean_info(p) for p in search_packages_info(direct_de
 for dependency in direct_dependencies + indirect_dependencies:
     if dependency not in [_.lower() for _ in package_info.keys()]:
         info = requests.get(f"https://pypi.python.org/pypi/{dependency}/json").json()["info"]
-        package_info[info["name"]] = add_vlz_url({
-            "name": info["name"],
-            "home-page": info["home_page"]
-        })
+        package_info[info["name"]] = add_vlz_url({"name": info["name"], "home-page": info["home_page"]})
 
 lower_package_info = {}
 for package_name, package in package_info.items():
