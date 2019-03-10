@@ -42,6 +42,9 @@ def copy_license():
 def symlink_docs():
     os.symlink('../README.md', 'docs/readme.md')
     os.symlink('../CREDITS.md', 'docs/credits.md')
+    os.symlink('../CHANGELOG.md', 'docs/changelog.md')
+    os.symlink('../CONTRIBUTING.md', 'docs/contributing.md')
+    os.symlink('../CODE_OF_CONDUCT.md', 'docs/code_of_conduct.md')
 
 
 copy_license()
