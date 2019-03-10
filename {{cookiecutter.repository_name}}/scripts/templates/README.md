@@ -5,8 +5,8 @@ IMPORTANT:
 -->
 
 # {{ cookiecutter.project_name }}
-[![pipeline status](https://{{ cookiecutter.repository_provider }}/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/badges/master/pipeline.svg)](https://{{ cookiecutter.repository_provider }}/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/commits/master)
-[![coverage report](https://{{ cookiecutter.repository_provider }}/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/badges/master/coverage.svg)](https://{{ cookiecutter.repository_provider }}/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/commits/master)
+[![pipeline status](https://gitlab.com/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/badges/master/pipeline.svg)](https://gitlab.com/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/pipelines)
+[![coverage report](https://gitlab.com/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/badges/master/coverage.svg)](https://gitlab.com/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}/commits/master)
 [![documentation](https://img.shields.io/readthedocs/{{ cookiecutter.repository_name }}.svg?style=flat)](https://{{ cookiecutter.repository_name }}.readthedocs.io/en/latest/index.html)
 [![pypi version](https://img.shields.io/pypi/v/{{ cookiecutter.repository_name }}.svg)](https://pypi.org/project/{{ cookiecutter.repository_name }}/)
 
