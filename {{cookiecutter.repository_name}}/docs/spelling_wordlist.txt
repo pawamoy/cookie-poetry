@@ -1,5 +1,8 @@
 Changelog
+offline
+online
 sexualized
+wiki
 {{ cookiecutter.project_name }}
 {{ cookiecutter.project_description }}
 {{ cookiecutter.author_fullname }}
