@@ -25,7 +25,39 @@ but feel free to try it out, or fork it!
 - Python 3.6 or above
 - Auto-generated CREDITS.md from Python dependencies
 - All licenses from [choosealicense.com](https://choosealicense.com/appendix/)
-- Convenience Makefile
+- Makefile for convenience
+
+### Makefile
+- `build`: Build the package wheel and sdist.
+- `check`: Check it all!
+- `check-bandit`: Check for security warnings in code using bandit.
+- `check-black`: Check if code is formatted nicely using black.
+- `check-flake8`: Check for general warnings in code using flake8.
+- `check-isort`: Check if imports are correctly ordered using isort.
+- `check-safety`: Check for vulnerabilities in dependencies using safety.
+- `check-spelling`: Check spelling in the documentation.
+- `clean`: Delete temporary files.
+- `clean-tests`: Delete temporary tests files.
+- `credits`: Regenerate CREDITS.md.
+- `docs`: Build the documentation locally.
+- `help`: Print this help.
+- `lint`: Run linting tools on the code.
+- `lint-black`: Lint the code using black.
+- `lint-isort`: Sort the imports using isort.
+- `publish`: Publish the latest built version on PyPI.
+- `readme`: Regenerate README.md.
+- `setup`: Setup the development environment (install dependencies).
+- `test`: Run the tests using pytest.
+- `update-spelling-wordlist`: Update the spelling word list.
+
+Typically, once the project is generated, you would run:
+
+```
+make setup
+make readme credits
+make check
+make test
+```
 
 ## Requirements
 - [git](https://git-scm.com/downloads)
