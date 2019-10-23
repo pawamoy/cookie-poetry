@@ -21,6 +21,7 @@ but feel free to try it out, or fork it!
 - Documentation built with Sphinx, in Markdown and/or reStructuredText
 - Pre-configured tools: black, isort, bandit, safety
 - Tests run with pytest (and plugins), with coverage
+- Dark theme for coverage HTML report
 - Gitlab CI configuration (no Travis CI)
 - Python 3.6 or above
 - Auto-generated CREDITS.md from Python dependencies
@@ -29,11 +30,12 @@ but feel free to try it out, or fork it!
 
 ### Makefile
 - `build`: Build the package wheel and sdist.
-- `check`: Check it all!
+- `check`: Run multiple checks.
 - `check-bandit`: Check for security warnings in code using bandit.
 - `check-black`: Check if code is formatted nicely using black.
 - `check-flake8`: Check for general warnings in code using flake8.
 - `check-isort`: Check if imports are correctly ordered using isort.
+- `check-pylint`: Check for more extensive code-smells with pylint.
 - `check-safety`: Check for vulnerabilities in dependencies using safety.
 - `check-spelling`: Check spelling in the documentation.
 - `clean`: Delete temporary files.
