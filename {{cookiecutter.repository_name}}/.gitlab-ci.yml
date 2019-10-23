@@ -16,7 +16,7 @@ stages:
     - pip install poetry
     - poetry --version
     - poetry config settings.virtualenvs.in-project true
-    - poetry install -vv $POETRY_ARGS
+    - poetry install -vv
 
 # Quality jobs
 
