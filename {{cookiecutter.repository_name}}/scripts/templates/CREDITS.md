@@ -5,7 +5,7 @@ IMPORTANT:
 -->
 
 # Credits
-These projects were used to build {{ cookiecutter.project_name }}. **Thank you!**
+These projects were used to build `{{ cookiecutter.project_name }}`. **Thank you!**
 
 [![`python`](https://www.vectorlogo.zone/logos/python/python-ar21.svg)](https://www.python.org/) |
 [`poetry`](https://poetry.eustace.io/) |
