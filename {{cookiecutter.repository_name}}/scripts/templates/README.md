@@ -43,8 +43,7 @@ python3.6 -m pip install {{ cookiecutter.python_package_distribution_name }}
 
 With [`pipx`](https://github.com/cs01/pipx):
 ```bash
-# install pipx with the recommended method
-curl https://raw.githubusercontent.com/cs01/pipx/master/get-pipx.py | python3
+python3.6 -m pip install --user pipx
 
 pipx install --python python3.6 {{ cookiecutter.python_package_distribution_name }}
 ```
