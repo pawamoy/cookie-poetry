@@ -29,6 +29,9 @@ flake8 = "*"
 ipython = "*"
 isort = { version = "*", extras = ["pyproject"] }
 jinja2-cli = "*"
+mkdocs = "*"
+mkdocstrings = "*"
+mkdocs-material = "*"
 pylint = { git = "https://github.com/PyCQA/pylint" }
 pytest = "*"
 pytest-cov = "*"
