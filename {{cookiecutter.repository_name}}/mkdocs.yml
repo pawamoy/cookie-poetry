@@ -1,8 +1,8 @@
 site_name: {{ cookiecutter.project_name }}
 site_description: {{ cookiecutter.project_description }}
 site_url: https://{{ cookiecutter.repository_name }}.github.io/
-repo_url: https://github.com/{{ cookiecutter.respoitory_namespace }}/{{ cookiecutter.respoitory_name }}
-repo_name: {{ cookiecutter.respoitory_namespace }}/{{ cookiecutter.respoitory_name }}
+repo_url: https://github.com/{{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}
+repo_name: {{ cookiecutter.repository_namespace }}/{{ cookiecutter.repository_name }}
 
 nav:
   - Overview: "index.md"
