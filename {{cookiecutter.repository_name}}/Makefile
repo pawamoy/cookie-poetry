@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-PY_SRC := src/ tests/ scripts/*.py docs/conf.py
+PY_SRC := src/ tests/ scripts/*.py
 
 .PHONY: build
 build:  ## Build the package wheel and sdist.
@@ -55,7 +55,15 @@ credits:  ## Regenerate CREDITS.md.
 
 .PHONY: docs
 docs:  ## Build the documentation locally.
-	poetry run sphinx-build -E -b html docs build/docs
+	poetry run mkdocs build
+
+.PHONY: docs-serve
+docs-serve:  ## Serve the documentation (localhost:8000).
+	poetry run mkdocs serve
+
+.PHONY: docs-deploy
+docs-deploy:  ## Deploy the documentation on GitHub pages.
+	poetry run mkdocs gh-deploy
 
 .PHONY: help
 help:  ## Print this help.
