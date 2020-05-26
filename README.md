@@ -3,6 +3,11 @@
 <!-- badge list -->
 Cookiecutter for Poetry projects.
 
+> :warning: I am now using [copier-poetry](https://github.com/pawamoy/copier-poetry),
+which is a very similar (and better!) template,
+but based on [copier](https://github.com/pykong/copier)
+instead of [cookiecutter](https://github.com/cookiecutter/cookiecutter).
+
 This cookiecutter is mainly for my own usage,
 but feel free to try it out, or fork it!
 
